@@ -6,7 +6,7 @@ A fully interactive Kanban board built with ReactJS that fetches ticket data fro
 
 You can view the live demo of the project at the following link:
 
-[Live Demo Link](#)
+[Live Demo Link](#https://kanban-blond-two.vercel.app/)
 
 ## Features
 
