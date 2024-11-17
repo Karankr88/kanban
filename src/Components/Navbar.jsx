@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import filterIcon from '../../Assets/Images/Tuning.svg'
-import downIcon from '../../Assets/Images/Down.svg'
+import filterIcon from '../Assets/Images/Tuning.svg'
+import downIcon from '../Assets/Images/Down.svg'
 
-import './Navbar.css'
+import '../Styles/Navbar.css'
 
 export default function Navbar(props) {
     const [toggleFilter, settoggleFilter] = useState(false);

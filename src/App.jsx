@@ -3,8 +3,8 @@ import axios from 'axios';
 
 import './App.css';
 
-import List from './Components/List/List';
-import Navbar from './Components/Navbar/Navbar';
+import List from './Components/List';
+import Navbar from './Components/Navbar';
 
 function App() {
   const statusList = ['In progress', 'Backlog', 'Todo', 'Done', 'Cancelled']

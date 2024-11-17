@@ -1,7 +1,7 @@
 import React from 'react'
 
-import './List.css'
-import Card from '../Card/Card'
+import '../Styles/List.css'
+import Card from './Card'
 
 let cardCount = 0;
 
