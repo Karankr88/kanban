@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white1: #ffffff;
+  --black1: #000000;
+  --textgrey: #808184;
+  --grey1: #dfe4e9;
+  --grey2: #f0f1f4;
+  --grey3: #F8F8FA;
+  --gap: 16px; /* Default gap between items */
+}
+
+.board-details {
+  width: 100%;
+  height: calc(100vh - 68px);  /* Adjust height based on header */
+  background-color: var(--grey2);
+  overflow-x: auto;  /* Allow horizontal scrolling */
+  overflow-y: hidden;  /* Hide vertical scrolling */
+}
+
+.board-details-list {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--gap); /* Use flexible gap */
+  padding: 0 16px;
+}
+
+@media (max-width: 1200px) {
+  .board-details {
+    padding: 16px; /* Add padding for medium screens */
+  }
+
+  .board-details-list {
+    gap: 12px; /* Reduce the gap on medium screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .board-details {
+    padding: 16px;
+    height: calc(100vh - 100px); /* Adjust for smaller tablets */
+  }
+
+  .board-details-list {
+    gap: 10px; /* Reduce gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .board-details {
+    padding: 8px; /* Less padding on smaller devices */
+    height: calc(100vh - 120px); /* Adjust for smaller phones */
+  }
+
+  .board-details-list {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .board-details {
+    padding: 8px 4px; /* Reduced padding on very small screens */
+    height: auto; /* Allow content to adapt in height */
+  }
+
+  .board-details-list {
+    flex-direction: column; /* Stack items vertically */
+    gap: 12px; /* Increased gap for better spacing */
+  }
+
+  /* Adjust font size for readability on small screens */
+  .list-title {
+    font-size: 14px;
+  }
+
+  .list-sum {
+    font-size: 12px;
+  }
+
+  .list-icon svg {
+    width: 16px; /* Smaller icons */
+    height: 16px;
+  }
+
+  .list-add-item svg,
+  .list-option-item svg {
+    width: 20px; /* Slightly smaller icons */
+    height: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Extra small screens (small phones) */
+  .board-details {
+    padding: 8px 2px; /* Less padding on extremely small devices */
+  }
+
+  .board-details-list {
+    flex-direction: column; /* Ensure the column layout for very small screens */
+    gap: 10px;
+  }
+
+  .list-title {
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .list-sum {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  .list-icon svg {
+    width: 14px; /* Further reduce icon size */
+    height: 14px;
+  }
+
+  .list-add-item svg,
+  .list-option-item svg {
+    width: 18px;
+    height: 18px;
+  }
+}
